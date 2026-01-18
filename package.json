@@ -1,31 +1,34 @@
 {
-  "name": "att-formulario-cadastro",
-  "version": "1.0.0",
-  "description": "![preview](./assets/foto_exemplo1.PNG)\r ![preview](./assets/foto_exemplo2.PNG)",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rafael19722/att-formulario-cadastro.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rafael19722/att-formulario-cadastro/issues"
-  },
-  "homepage": "https://github.com/Rafael19722/att-formulario-cadastro#readme",
-  "dependencies": {
-    "@prisma/client": "^6.8.2",
-    "bcrypt": "^6.0.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "prisma": "^6.8.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+    "name": "att-formulario-cadastro",
+    "version": "1.0.0",
+    "description": "![preview](./assets/foto_exemplo1.PNG)\r ![preview](./assets/foto_exemplo2.PNG)",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon src/server.js",
+        "start": "node src/server.js",
+        "build": "npx prisma generate"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rafael19722/att-formulario-cadastro.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Rafael19722/att-formulario-cadastro/issues"
+    },
+    "homepage": "https://github.com/Rafael19722/att-formulario-cadastro#readme",
+    "dependencies": {
+        "@prisma/client": "^6.8.2",
+        "bcrypt": "^6.0.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.5.0",
+        "express": "^5.1.0",
+        "jsonwebtoken": "^9.0.2",
+        "prisma": "^6.8.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
 }
