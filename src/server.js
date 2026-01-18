@@ -15,8 +15,8 @@ app.use(express.json());
 app.use("/api", authRoutes);
 app.use("/api", userRoutes);
 
-app.use(express.static("public"));
-app.get("/", (req, res) => {
+app.use(express.static(path.join(__dirname, "public")));
+app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 app.listen(3000, () => {
